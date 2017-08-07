@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         news_list.setHasFixedSize(true)
         news_list.layoutManager = LinearLayoutManager(this)
 
+
         initAdapter()
     }
 
@@ -20,6 +21,16 @@ class MainActivity : AppCompatActivity() {
         if (news_list.adapter == null) {
             news_list.adapter = NewsAdapter()
         }
+        (news_list.adapter as NewsAdapter).addNews(getData())
+    }
+
+    private  fun getData():List<RedditNewsItem> {
+        var news: List<RedditNewsItem>
+        for () {
+
+        }
+
+            return news
     }
 
 }
