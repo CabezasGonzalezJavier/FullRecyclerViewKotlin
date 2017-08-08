@@ -18,19 +18,38 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initAdapter() {
+
+
         if (news_list.adapter == null) {
             news_list.adapter = NewsAdapter()
         }
-        (news_list.adapter as NewsAdapter).addNews(getData())
+        (news_list.adapter as NewsAdapter).addNews()
     }
 
-    private  fun getData():List<RedditNewsItem> {
-        var news: List<RedditNewsItem>
-        for () {
 
+    private fun getData() :List<RedditNewsItem> {
+        val numbers: MutableList<String> = mutableListOf("1", "2", "3")
+        var fruits = resources.getStringArray(R.array.fruits_array)
+        var news : List<RedditNewsItem> = ArrayList()
+        for (fruit  in fruits) {
+
+            numbers.add(fruit)
         }
 
-            return news
+        return news
     }
+
+
+//    private  fun getData():List<RedditNewsItem> {
+//
+//        var news : List<RedditNewsItem> = ArrayList()
+//        val itemNews : RedditNewsItem
+//        for (i in fruits) {
+//            itemNews= RedditNewsItem(fruits.get(i))
+//            news.add(itemNews)
+//        }
+//
+//            return news
+//    }
 
 }
