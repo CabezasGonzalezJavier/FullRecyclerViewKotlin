@@ -11,6 +11,8 @@ class RedditNewsItem(val names : String) {
         this.name = names
     }
 
+    operator fun  invoke(fruit: String?) {}
+
     /*fun getName(): String {
         return name
     }

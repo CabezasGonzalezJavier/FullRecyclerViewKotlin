@@ -27,13 +27,17 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun getData() :List<RedditNewsItem> {
+    private fun getData(): List<RedditNewsItem> {
         val numbers: MutableList<String> = mutableListOf("1", "2", "3")
         var fruits = resources.getStringArray(R.array.fruits_array)
-        var news : List<RedditNewsItem> = ArrayList()
-        for (fruit  in fruits) {
-
+        var news: List<RedditNewsItem> = ArrayList()
+        var reddit: RedditNewsItem?
+        var string = ""
+        for (fruit in fruits) {
+            string = fruit
+            reddit(fruit)
             numbers.add(fruit)
+            news[i]
         }
 
         return news
