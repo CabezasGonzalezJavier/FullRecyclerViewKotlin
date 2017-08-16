@@ -3,21 +3,21 @@ package com.thedeveloperworldisyours.fullrecyclerviewkotlin
 /**
  * Created by javierg on 14/08/2017.
  */
-class VerticalData internal constructor(private var mTitle: String?, private var mSubTitle: String?) {
+class MyItem internal constructor(private var title: String?, private var subtitle: String?) {
 
     fun getmTitle(): String? {
-        return mTitle
+        return title
     }
 
     fun setmTitle(mTitle: String) {
-        this.mTitle = mTitle
+        this.title = mTitle
     }
 
     fun getmSubTitle(): String? {
-        return mSubTitle
+        return subtitle
     }
 
     fun setmSubTitle(mSubTitle: String) {
-        this.mSubTitle = mSubTitle
+        this.subtitle = mSubTitle
     }
 }
