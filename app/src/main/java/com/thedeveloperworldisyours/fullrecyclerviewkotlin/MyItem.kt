@@ -5,19 +5,13 @@ package com.thedeveloperworldisyours.fullrecyclerviewkotlin
  */
 class MyItem internal constructor(private var title: String?, private var subtitle: String?) {
 
-    fun getmTitle(): String? {
+    fun getTitle(): String? {
         return title
     }
 
-    fun setmTitle(mTitle: String) {
-        this.title = mTitle
-    }
 
-    fun getmSubTitle(): String? {
+    fun getSubTitle(): String? {
         return subtitle
     }
 
-    fun setmSubTitle(mSubTitle: String) {
-        this.subtitle = mSubTitle
-    }
 }

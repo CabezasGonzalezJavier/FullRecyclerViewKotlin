@@ -1,7 +1,6 @@
 package com.thedeveloperworldisyours.fullrecyclerviewkotlin
 
 import android.content.Context
-import android.support.v4.util.SparseArrayCompat
 import android.view.ViewGroup
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -32,8 +31,8 @@ class VerticalRecyclerViewAdapter(private val arrayList: ArrayList<MyItem>,
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindItems(items: MyItem) {
-            itemView.tvName.text = items.getmTitle()
-            itemView.tvNumber.text = items.getmSubTitle()
+            itemView.tvName.text = items.getTitle()
+            itemView.tvNumber.text = items.getSubTitle()
         }
     }
 
