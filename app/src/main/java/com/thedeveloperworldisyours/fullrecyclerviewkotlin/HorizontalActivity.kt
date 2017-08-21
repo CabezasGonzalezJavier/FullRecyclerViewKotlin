@@ -8,13 +8,15 @@ import android.support.v7.widget.RecyclerView
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.activity_vertical.*
 
-class VerticalActivity : AppCompatActivity() {
+class HorizontalActivity : AppCompatActivity() {
+
     private var myAdapter: VerticalRecyclerViewAdapter? = null
     private var arrayList: ArrayList<MyItem>? = null
     private var layoutManager: RecyclerView.LayoutManager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_vertical)
+        setContentView(R.layout.activity_horizontal)
 
         if (getSupportActionBar() != null) {
             getSupportActionBar()?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.background_action_bar))
@@ -44,8 +46,8 @@ class VerticalActivity : AppCompatActivity() {
 
     private fun initialize() {
         arrayList = ArrayList<MyItem>()
-        layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
-        myAdapter = VerticalRecyclerViewAdapter(arrayList!!, this, R.layout.vertical_list_item)
+        layoutManager = LinearLayoutManager(this, LinearLayout.HORIZONTAL, false)
+        myAdapter = VerticalRecyclerViewAdapter(arrayList!!, this, R.layout.horizontal_item_cell)
 
     }
 }
