@@ -6,22 +6,26 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.widget.LinearLayout
-import kotlinx.android.synthetic.main.vertical_activity.*
+import kotlinx.android.synthetic.main.swipe_activity.*
 
-class VerticalActivity : AppCompatActivity() {
-    private var myAdapter: VerticalRecyclerViewAdapter? = null
+class SwipeActivity : AppCompatActivity() {
+
+    private var myAdapter: SwipeRecyclerViewAdapter? = null
     private var arrayList: ArrayList<MyItem>? = null
     private var layoutManager: RecyclerView.LayoutManager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.vertical_activity)
+        setContentView(R.layout.swipe_activity)
 
         if (getSupportActionBar() != null) {
             getSupportActionBar()?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.background_action_bar))
         }
+
         initialize()
         setupList()
         loadData()
+
     }
 
     private fun loadData() {
@@ -48,7 +52,7 @@ class VerticalActivity : AppCompatActivity() {
 
         arrayList = ArrayList<MyItem>()
         layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
-        myAdapter = VerticalRecyclerViewAdapter(arrayList!!, this, R.layout.vertical_list_item)
+        myAdapter = SwipeRecyclerViewAdapter(arrayList!!, this, R.layout.swipe_list_item)
 
     }
 }

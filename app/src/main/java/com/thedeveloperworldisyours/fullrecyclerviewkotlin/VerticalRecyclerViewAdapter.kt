@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
-import kotlinx.android.synthetic.main.horizontal_item_cell.view.*
+import kotlinx.android.synthetic.main.vertical_list_item.view.*
 
 /**
  * Created by javierg on 14/08/2017.
@@ -31,8 +31,8 @@ class VerticalRecyclerViewAdapter(private val arrayList: ArrayList<MyItem>,
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindItems(items: MyItem) {
-            itemView.horizontal_list_item_title.text = items.getTitle()
-            itemView.horizontal_list_item_subtitle.text = items.getSubTitle()
+            itemView.vertical_list_item_title.text = items.getTitle()
+            itemView.vertical_list_item_subtitle.text = items.getSubTitle()
         }
     }
 

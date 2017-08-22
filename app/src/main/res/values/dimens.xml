@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_element_list_item">10dp</dimen>
+
+    <dimen name="swipe_item_list">240dp</dimen>
 </resources>

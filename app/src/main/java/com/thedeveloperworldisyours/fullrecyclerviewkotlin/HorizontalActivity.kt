@@ -6,7 +6,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.widget.LinearLayout
-import kotlinx.android.synthetic.main.activity_vertical.*
+import kotlinx.android.synthetic.main.horizontal_activity.*
 
 class HorizontalActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class HorizontalActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_horizontal)
+        setContentView(R.layout.horizontal_activity)
 
         if (getSupportActionBar() != null) {
             getSupportActionBar()?.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.background_action_bar))
