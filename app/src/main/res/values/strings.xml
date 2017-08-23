@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">FullRecyclerViewKotlin</string>
 
+    <string name="the_developer_world_is_yours">The developer world is yours</string>
     <string-array name="fruits_array">
         <item>Apples</item>
         <item>Apricots</item>

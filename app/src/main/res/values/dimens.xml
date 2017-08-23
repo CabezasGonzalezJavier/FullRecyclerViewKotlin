@@ -3,4 +3,9 @@
     <dimen name="margin_element_list_item">10dp</dimen>
 
     <dimen name="swipe_item_list">240dp</dimen>
+
+    <!--Snap-->
+    <dimen name="snap_list_view_width">190dp</dimen>
+    <dimen name="snap_list_view_height">100dp</dimen>
+    <dimen name="snap_list_view_margin">10dp</dimen>
 </resources>
